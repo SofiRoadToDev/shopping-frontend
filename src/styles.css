@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+  @apply md:w-1/4 flex flex-col shadow-md p-3 hover:border-2 rounded-md;
+}
+
+.btn {
+  @apply bg-slate-800 mx-auto text-white rounded-xl w-1/4 py-2 px-3 my-2 hover:bg-slate-700;
+}
+
+.mobile-menu {
+  @apply gap-2 py-2 px-1 flex-col;
+}

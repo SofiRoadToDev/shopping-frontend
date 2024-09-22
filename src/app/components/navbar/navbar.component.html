@@ -1,0 +1,50 @@
+<header class="container-fluid bg-slate-900">
+  <div
+    class="bg-cover bg-fixed bg-no-repeat bg-daenerys-hero md:min-h-60 w-full"
+  ></div>
+
+  <nav class="md:block hidden">
+    <ul class="gap-2 py-2 px-1 flex">
+      <li class="text-white hover:text-yellow-200 border-b-4 py-2 px-3">
+        <a href="">Home</a>
+      </li>
+      <li class="text-white hover:text-yellow-200 py-2 px-3">
+        <a href="">Contacto</a>
+      </li>
+      <li class="text-white hover:text-yellow-200 py-2 px-3 rounded-sm">
+        <a href="">Galeria</a>
+      </li>
+    </ul>
+  </nav>
+  <nav class="md:hidden">
+    <div class="flex justify-between py-3 px-5">
+      <fa-icon
+        [icon]="faBars"
+        size="xl"
+        class="icon-white"
+        (click)="toggleHide()"
+      ></fa-icon
+      >>
+      <div class="relative">
+        <fa-icon [icon]="shoppingIcon" class="icon-white" size="xl"></fa-icon>
+        <div
+          class="rounded-xl bg-green-500 h-3 w-3 absolute -bottom-1 right-2 animate-pulse"
+        ></div>
+
+        ...
+      </div>
+    </div>
+
+    <ul [ngClass]="{ hidden: ishidden }">
+      <li class="text-white hover:text-yellow-200 border-b-4 py-2 px-3">
+        <a href="">Home</a>
+      </li>
+      <li class="text-white hover:text-yellow-200 py-2 px-3">
+        <a href="">Contacto</a>
+      </li>
+      <li class="text-white hover:text-yellow-200 py-2 px-3 rounded-sm">
+        <a href="">Galeria</a>
+      </li>
+    </ul>
+  </nav>
+</header>
