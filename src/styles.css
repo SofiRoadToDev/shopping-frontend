@@ -13,3 +13,9 @@
 .mobile-menu {
   @apply gap-2 py-2 px-1 flex-col;
 }
+.btn-green {
+  @apply text-green-600 px-3 py-1  hover:bg-green-600 hover:text-white;
+}
+.btn-red {
+  @apply text-red-600 px-3 py-1  hover:bg-red-600 hover:text-white;
+}
