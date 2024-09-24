@@ -3,9 +3,15 @@
 @tailwind utilities;
 
 .card {
-  @apply md:w-1/4 flex flex-col shadow-md p-3 hover:border-2 rounded-md;
+  @apply md:w-1/4 flex flex-col shadow-md p-3  rounded-md;
+}
+.card-title {
+  @apply text-lg text-center font-medium py-2 text-slate-700;
 }
 
+.card-body {
+  @apply text-slate-800 overflow-hidden;
+}
 .btn {
   @apply bg-slate-800 mx-auto text-white rounded-xl w-1/4 py-2 px-3 my-2 hover:bg-slate-700;
 }

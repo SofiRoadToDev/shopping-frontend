@@ -1,4 +1,28 @@
 <div class="grid md:grid-cols-3 w-screen h-screen">
-  <div class="md:col-span-2 bg-gray-500 min-[300px]:">hjghjg</div>
-  <div class="bg-green-500 min-[300px]:">hjghjg</div>
+  <div class="md:col-span-2 p-2 md:p-10 md:mx-auto m-0">
+    <p class="text-center text-2xl text-slate-500 my-3">Checkout</p>
+    <table class="shadow-md">
+      <thead>
+        <tr class="border-b-2 text-slate-700">
+          <th class="px-5 py-4">Id</th>
+          <th class="px-5 py-4">Nombre</th>
+          <th class="px-5 py-4">Precio</th>
+          <th class="px-5 py-4">Cantidad</th>
+          <th class="px-5 py-4">Subtotal</th>
+          <th class="px-5 py-4">Acciones</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <div class="p-10 md:relative flex felx-col">
+    <div class="card w-full md:fixed md:top-96">
+      <p class="card-title bg-slate-200 rounded-md hover:shadow-md">Total</p>
+      <p class="card-body text-center text-lg">$24.000</p>
+      <div class="flex">
+        <button class="btn-green rounded-md w-1/2">Comprar</button>
+        <button class="btn-red rounded-md w-1/2">Vaciar carrito</button>
+      </div>
+    </div>
+  </div>
 </div>
